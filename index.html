@@ -25,7 +25,25 @@
 <script>
     const board_border = 'black';
     const board_background = 'white';
+    const snake_col = 'lightblue';
+    const snake_border = 'darkblue';
+
+    //Get the canvas element
+    const snakeboard = document.getElementById("snakeboard");
+    // Return a 2D drawing context
+    const snakeboard_ctx = snakeboard.getContext("2d");
+    //Start game
+    main();
     
+
+    //main function is repeatedly call to keep game running
+    function main(){
+        clearCanvas();
+        drawSnake();
+
+    }
+
+   
 
 </script>
 </html>
